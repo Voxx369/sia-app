@@ -1,0 +1,3 @@
+ALTER TABLE courses ADD COLUMN IF NOT EXISTS zoom_meeting_id TEXT;
+ALTER TABLE courses ADD COLUMN IF NOT EXISTS zoom_join_url TEXT;
+ALTER TABLE courses ADD COLUMN IF NOT EXISTS zoom_start_url TEXT;

@@ -1,0 +1,212 @@
+.subscriptions-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.subscription-type-section {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-header h2 {
+  color: var(--color-primary);
+  font-size: var(--font-size-h3);
+  margin: 0;
+}
+
+.subscriber-count {
+  background: var(--color-neutral-light);
+  color: var(--color-primary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-small);
+}
+
+.section-description {
+  color: var(--color-text-gray);
+  font-size: var(--font-size-body);
+  margin-bottom: var(--spacing-lg);
+}
+
+.subscribers-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.subscriber-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg);
+  background: var(--color-neutral-light);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-neutral-gray);
+  transition: all 0.2s;
+}
+
+.subscriber-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(26, 31, 113, 0.1);
+}
+
+.subscriber-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.subscriber-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+}
+
+.subscriber-details h4 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--color-text-dark);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-semibold);
+}
+
+.subscriber-meta {
+  margin: 0;
+  color: var(--color-text-gray);
+  font-size: var(--font-size-small);
+  line-height: 1.4;
+}
+
+.subscriber-price {
+  text-align: right;
+  color: var(--color-secondary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+}
+
+.price-period {
+  display: block;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-gray);
+  margin-top: var(--spacing-xs);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-gray);
+}
+
+/* Tabs Styles */
+.subscribers-tabs {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 2px solid var(--color-neutral-gray);
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-gray);
+  transition: all 0.2s;
+  position: relative;
+  bottom: -2px;
+}
+
+.tab-button:hover {
+  color: var(--color-primary);
+  background: rgba(26, 31, 113, 0.05);
+}
+
+.tab-button.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.tab-icon {
+  font-size: var(--font-size-h3);
+}
+
+.tab-label {
+  white-space: nowrap;
+}
+
+.tab-badge {
+  background: var(--color-primary);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+  min-width: 24px;
+  text-align: center;
+}
+
+.tab-button.active .tab-badge {
+  background: var(--color-secondary);
+}
+
+.tab-content {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .subscriber-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .subscriber-price {
+    align-self: flex-end;
+  }
+
+  .tab-button {
+    flex: 1;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .tab-label {
+    font-size: var(--font-size-small);
+  }
+}

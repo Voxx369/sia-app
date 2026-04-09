@@ -1,0 +1,83 @@
+.sia-artist-profile-page {
+  background: #ffffff;
+  color: #1b1b1b;
+}
+
+.sia-hero-artist-profile {
+  padding: 86px 0 74px;
+}
+
+.sia-artist-profile-loading {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sia-artist-profile-hero {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.sia-artist-profile-avatar {
+  width: 132px;
+  height: 132px;
+  border-radius: 999px;
+  border: 4px solid rgba(255, 255, 255, 0.92);
+  object-fit: cover;
+  background: #ffffff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.sia-artist-profile-hero-text {
+  flex: 1 1 420px;
+  max-width: 640px;
+}
+
+.sia-artist-profile-meta {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.sia-artist-profile-bio {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.65;
+}
+
+.sia-artist-profile-disciplines .sia-discipline-tag {
+  background: rgba(0, 221, 192, 0.24);
+  color: #0b1f36;
+}
+
+.sia-artist-profile-actions {
+  margin-top: 12px;
+}
+
+.sia-artist-profile-courses {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .sia-hero-artist-profile {
+    padding: 72px 0 62px;
+  }
+
+  .sia-artist-profile-hero {
+    justify-content: flex-start;
+  }
+
+  .sia-artist-profile-hero-text {
+    flex-basis: 100%;
+  }
+}
+

@@ -1,0 +1,473 @@
+.dashboard-page {
+  min-height: calc(100vh - 80px);
+  background: #f6f8ff;
+  padding: 26px 0 34px;
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.dashboard-sidebar {
+  background: #ffffff;
+  border: 1px solid var(--color-neutral-gray);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  padding: 22px 14px 14px;
+  position: sticky;
+  top: 92px;
+}
+
+.dashboard-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 4px 8px 18px;
+}
+
+.dashboard-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: var(--font-weight-semibold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dashboard-profile-text {
+  min-width: 0;
+}
+
+.dashboard-profile-name {
+  font-size: clamp(22px, 2vw, 26px);
+  font-weight: var(--font-weight-semibold);
+  color: #111827;
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.dashboard-profile-role {
+  color: var(--color-text-gray);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.dashboard-profile-stars {
+  display: flex;
+  gap: 4px;
+  color: #f59e0b;
+}
+
+.dashboard-profile-stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+.dashboard-profile-rating {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--color-text-gray);
+}
+
+.dashboard-nav-divider {
+  border-top: 1px solid var(--color-neutral-gray);
+  margin: 10px 8px;
+}
+
+.dashboard-nav {
+  display: grid;
+  gap: 4px;
+  padding: 0 4px;
+}
+
+.dashboard-nav-link,
+.dashboard-logout-btn {
+  min-height: 46px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 14px;
+  color: var(--color-primary);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.dashboard-nav-link {
+  text-decoration: none;
+}
+
+.dashboard-nav-link:hover,
+.dashboard-logout-btn:hover {
+  background: rgba(26, 31, 113, 0.05);
+  color: var(--color-primary);
+}
+
+.dashboard-nav-link.active {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.dashboard-nav-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dashboard-nav-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-logout-btn {
+  width: calc(100% - 8px);
+  margin: 0 4px;
+  background: transparent;
+  border: 1px solid transparent;
+  text-align: left;
+}
+
+.dashboard-content {
+  min-width: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.dashboard-content-header {
+  background: #ffffff;
+  border: 1px solid var(--color-neutral-gray);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dashboard-content-header h1 {
+  font-size: clamp(24px, 2.6vw, 32px);
+  margin-bottom: 6px;
+}
+
+.dashboard-content-header p {
+  color: var(--color-text-gray);
+}
+
+.dashboard-content-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.teacher-panel-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.teacher-panel-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.teacher-panel-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.teacher-panel {
+  background: #ffffff;
+  border: 1px solid var(--color-neutral-gray);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+}
+
+.teacher-panel h2 {
+  font-size: clamp(20px, 2vw, 26px);
+  margin-bottom: 10px;
+}
+
+.teacher-panel h3 {
+  font-size: clamp(18px, 1.8vw, 22px);
+  margin-bottom: 6px;
+}
+
+.teacher-panel p {
+  color: var(--color-text-gray);
+}
+
+.teacher-kpi {
+  color: var(--color-primary);
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+.teacher-kpi-label {
+  font-size: var(--font-size-small);
+  color: var(--color-text-gray);
+}
+
+.teacher-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--color-neutral-gray);
+}
+
+.teacher-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+}
+
+.teacher-table th,
+.teacher-table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-neutral-gray);
+}
+
+.teacher-table th {
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+}
+
+.teacher-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.teacher-form-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.teacher-form-grid label {
+  display: grid;
+  gap: 7px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+}
+
+.teacher-input,
+.teacher-select,
+.teacher-textarea {
+  min-height: 44px;
+  border-radius: 10px;
+  border: 2px solid var(--color-neutral-gray);
+  background: #ffffff;
+  color: var(--color-text-dark);
+  padding: 0 12px;
+}
+
+.teacher-textarea {
+  min-height: 120px;
+  resize: vertical;
+  padding: 10px 12px;
+}
+
+.teacher-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(0, 221, 192, 0.2);
+  color: var(--color-primary);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+}
+
+.teacher-list {
+  display: grid;
+  gap: 10px;
+}
+
+.teacher-list-item {
+  border: 1px solid var(--color-neutral-gray);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.teacher-list-item p {
+  margin-top: 4px;
+}
+
+.teacher-callout {
+  border: 1px dashed var(--color-neutral-gray);
+  border-radius: 12px;
+  background: #fbfcff;
+  padding: 16px;
+  color: var(--color-text-gray);
+}
+
+.dashboard-course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.dashboard-review-card {
+  border-radius: 14px;
+  border: 1px solid var(--color-neutral-gray);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-review-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dashboard-review-course a {
+  text-decoration: none;
+}
+
+.dashboard-review-title {
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+
+.dashboard-review-discipline {
+  font-size: 13px;
+  color: var(--color-text-gray);
+}
+
+.dashboard-review-meta {
+  font-size: 13px;
+  color: var(--color-text-gray);
+}
+
+.dashboard-review-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #f59e0b;
+}
+
+.dashboard-review-stars {
+  letter-spacing: 1px;
+}
+
+.dashboard-review-rating-value {
+  color: var(--color-text-gray);
+}
+
+.dashboard-review-comment {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
+.dashboard-quick-links {
+  display: grid;
+  gap: 10px;
+}
+
+.dashboard-quick-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  border-radius: 10px;
+  border: 1px solid var(--color-neutral-gray);
+  background: #ffffff;
+  color: var(--color-primary);
+  padding: 0 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dashboard-quick-link:hover {
+  color: var(--color-primary);
+  border-color: rgba(26, 31, 113, 0.22);
+  background: #f5f7ff;
+}
+
+.dashboard-profile-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.dashboard-profile-grid .dashboard-profile-full {
+  grid-column: 1 / -1;
+}
+
+.dashboard-note {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.dashboard-error {
+  color: #b91c1c;
+}
+
+@media (max-width: 1080px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar {
+    position: static;
+  }
+
+  .dashboard-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dashboard-nav-link,
+  .dashboard-logout-btn {
+    min-height: 42px;
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard-page {
+    padding-top: 16px;
+  }
+
+  .dashboard-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-profile-card {
+    align-items: flex-start;
+  }
+
+  .dashboard-avatar {
+    width: 72px;
+    height: 72px;
+    font-size: 28px;
+  }
+
+  .dashboard-profile-name {
+    font-size: 22px;
+  }
+}

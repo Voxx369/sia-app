@@ -1,0 +1,2 @@
+ALTER TABLE users ADD COLUMN IF NOT EXISTS zoom_api_key TEXT;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS zoom_api_secret TEXT;
